@@ -1,0 +1,961 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Y 公司投资者介绍：透明陶瓷与微纳米金属粉体/浆料双业务引擎。">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Y 公司｜投资者介绍 2026</title>
+  <style>
+    :root {
+      --ink: #0b1118;
+      --ink-2: #121b25;
+      --paper: #f5f7fa;
+      --white: #ffffff;
+      --muted: #667386;
+      --line: #dce3eb;
+      --blue: #1687ff;
+      --blue-2: #005fd8;
+      --cyan: #60d7ff;
+      --gold: #c79b4b;
+      --green: #16a47b;
+      --amber: #e59d29;
+      --red: #c84f53;
+      --radius: 18px;
+      --shadow: 0 18px 60px rgba(14, 35, 58, .12);
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    button { font: inherit; }
+
+    .progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 100;
+      width: 0;
+      height: 3px;
+      background: var(--blue);
+      box-shadow: 0 0 14px rgba(22, 135, 255, .75);
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(8, 14, 22, .9);
+      color: #fff;
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .nav-inner {
+      max-width: var(--max);
+      min-height: 64px;
+      padding: 0 24px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 6px rgba(22,135,255,.14);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      font-size: 13px;
+      color: #aeb9c6;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a { text-decoration: none; white-space: nowrap; transition: .2s ease; }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
+
+    .hero {
+      position: relative;
+      min-height: 760px;
+      color: #fff;
+      overflow: hidden;
+      background: var(--ink);
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background: url("factory.jpg") center / cover no-repeat;
+      filter: blur(4px) saturate(.75) contrast(1.08);
+      transform: scale(1.045);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(circle at 78% 26%, rgba(22,135,255,.28), transparent 34%),
+        linear-gradient(90deg, rgba(5,10,16,.97) 0%, rgba(5,10,16,.89) 48%, rgba(5,10,16,.55) 100%),
+        linear-gradient(0deg, rgba(5,10,16,.9), transparent 44%);
+    }
+    .hero-grid {
+      max-width: var(--max);
+      min-height: 696px;
+      padding: 92px 24px 52px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 32px;
+      height: 2px;
+      background: currentColor;
+    }
+    h1 {
+      max-width: 820px;
+      margin: 26px 0 22px;
+      font-size: clamp(44px, 6vw, 78px);
+      line-height: 1.06;
+      letter-spacing: -.045em;
+    }
+    .hero-lead {
+      max-width: 760px;
+      margin: 0;
+      color: #cbd4df;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.7;
+    }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+    .hero-tag {
+      padding: 9px 13px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      color: #e8edf4;
+      font-size: 13px;
+    }
+    .hero-panel {
+      align-self: end;
+      padding: 26px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 22px;
+      background: rgba(6, 13, 22, .72);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 24px 80px rgba(0,0,0,.3);
+    }
+    .hero-panel h2 { margin: 0 0 10px; font-size: 18px; }
+    .hero-panel p { margin: 0 0 20px; color: #aeb9c6; font-size: 14px; }
+    .engine-row {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 13px;
+      padding: 16px 0;
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+    .engine-no {
+      font: 700 13px/36px ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-align: center;
+      color: var(--cyan);
+      border: 1px solid rgba(96,215,255,.35);
+      border-radius: 10px;
+      height: 36px;
+    }
+    .engine-row strong { display: block; font-size: 16px; }
+    .engine-row span { color: #9eabba; font-size: 13px; }
+
+    .metric-wrap { background: #fff; border-bottom: 1px solid var(--line); }
+    .metrics {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .metric {
+      min-height: 156px;
+      padding: 28px 22px;
+      border-right: 1px solid var(--line);
+    }
+    .metric:first-child { border-left: 1px solid var(--line); }
+    .metric-value { font-size: 34px; line-height: 1.05; font-weight: 850; letter-spacing: -.04em; }
+    .metric-value em { color: var(--blue); font-style: normal; }
+    .metric-label { margin-top: 12px; color: var(--muted); font-size: 13px; }
+    .metric small { display: block; margin-top: 6px; color: #98a3af; }
+
+    main section { scroll-margin-top: 82px; }
+    .section { padding: 108px 24px; }
+    .section.compact { padding-top: 72px; padding-bottom: 72px; }
+    .section.dark { color: #fff; background: var(--ink); }
+    .section.deep { color: #fff; background: var(--ink-2); }
+    .container { max-width: var(--max); margin: 0 auto; }
+    .section-head {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 70px;
+      align-items: end;
+      margin-bottom: 54px;
+    }
+    .kicker { color: var(--blue-2); font-size: 12px; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
+    .dark .kicker, .deep .kicker { color: var(--cyan); }
+    h2.section-title {
+      margin: 10px 0 0;
+      font-size: clamp(34px, 4.2vw, 58px);
+      line-height: 1.15;
+      letter-spacing: -.04em;
+    }
+    .section-intro { margin: 0; color: var(--muted); font-size: 18px; }
+    .dark .section-intro, .deep .section-intro { color: #aeb9c6; }
+    .fineprint { color: #8591a0; font-size: 12px; }
+
+    .thesis-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; }
+    .thesis-card {
+      position: relative;
+      min-height: 360px;
+      padding: 34px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .thesis-card.primary {
+      color: #fff;
+      background: var(--ink-2);
+      border-color: rgba(255,255,255,.12);
+    }
+    .thesis-card .big-no {
+      position: absolute;
+      top: 8px;
+      right: 22px;
+      color: rgba(22,135,255,.12);
+      font-size: 120px;
+      line-height: 1;
+      font-weight: 900;
+    }
+    .thesis-card h3 { position: relative; margin: 80px 0 12px; font-size: 26px; line-height: 1.25; }
+    .thesis-card p { position: relative; margin: 0; color: var(--muted); }
+    .thesis-card.primary p { color: #b9c4d1; }
+    .mini-list { position: relative; display: grid; gap: 12px; margin-top: 26px; }
+    .mini-list div { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; }
+    .mini-list div::before { content: ""; flex: 0 0 7px; width: 7px; height: 7px; margin-top: 8px; border-radius: 50%; background: var(--blue); }
+
+    .engine-section { position: relative; overflow: hidden; }
+    .engine-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at 90% 8%, rgba(22,135,255,.13), transparent 30%);
+    }
+    .engine-layout { display: grid; grid-template-columns: 340px 1fr; gap: 40px; }
+    .engine-visual {
+      position: sticky;
+      top: 94px;
+      height: 570px;
+      overflow: hidden;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: #0d1520;
+    }
+    .engine-visual img { width: 100%; height: 100%; object-fit: cover; opacity: .58; }
+    .engine-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(6,12,19,.95), transparent 62%); }
+    .visual-caption { position: absolute; z-index: 2; inset: auto 24px 24px; }
+    .visual-caption strong { display: block; font-size: 30px; line-height: 1.15; }
+    .visual-caption span { color: #9dacbd; font-size: 13px; }
+    .products { display: grid; gap: 14px; }
+    .product {
+      padding: 26px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px;
+      background: rgba(255,255,255,.035);
+      transition: border-color .2s ease, transform .2s ease, opacity .2s ease;
+    }
+    .product:hover { transform: translateY(-2px); border-color: rgba(96,215,255,.45); }
+    .product-top { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; }
+    .product h3 { margin: 0; font-size: 21px; }
+    .product .formula { display: block; margin-top: 5px; color: #8390a0; font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .stage {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+    .stage.mass { color: #72e1bd; }
+    .stage.verify { color: #ffc56b; }
+    .stage.rnd { color: #8dbdff; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 22px; }
+    .product-grid dt { color: #7f8b9a; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .product-grid dd { margin: 6px 0 0; color: #d5dde7; font-size: 14px; }
+
+    .ceramic-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr 1fr;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .ceramic-gallery figure { margin: 0; height: 210px; overflow: hidden; border-radius: 14px; background: #e8edf4; }
+    .ceramic-gallery figure:nth-child(2) { height: 260px; margin-top: -25px; }
+    .ceramic-gallery img { width: 100%; height: 100%; object-fit: cover; }
+
+    .light .product { background: #fff; border-color: var(--line); color: var(--ink); }
+    .light .product:hover { border-color: rgba(22,135,255,.55); }
+    .light .product-grid dd { color: #4d5a69; }
+    .light .product .formula { color: #8793a0; }
+    .filterbar { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 22px; }
+    .filter {
+      padding: 8px 13px;
+      color: #596576;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .filter.active { color: #fff; border-color: var(--blue); background: var(--blue); }
+    .product.is-hidden { display: none; }
+    .powder-layout { display: grid; grid-template-columns: 1fr 330px; gap: 34px; align-items: start; }
+    .powder-art { position: sticky; top: 94px; display: grid; gap: 12px; }
+    .powder-art figure { margin: 0; overflow: hidden; border-radius: 18px; border: 1px solid var(--line); background: #fff; box-shadow: var(--shadow); }
+    .powder-art img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .powder-art figcaption { padding: 13px 16px; color: var(--muted); font-size: 12px; }
+
+    .value-chain {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    .chain-step { min-height: 210px; padding: 26px; border-right: 1px solid rgba(255,255,255,.15); }
+    .chain-step:last-child { border-right: 0; }
+    .chain-step .num { color: var(--cyan); font: 700 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .chain-step h3 { margin: 34px 0 10px; font-size: 19px; }
+    .chain-step p { margin: 0; color: #9eabba; font-size: 13px; }
+    .chain-note { margin-top: 24px; padding: 18px 22px; border-left: 3px solid var(--blue); background: rgba(255,255,255,.05); color: #bdc8d4; }
+
+    .customer-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .customer-card { padding: 30px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+    .customer-card h3 { margin: 0 0 8px; font-size: 22px; }
+    .customer-card > p { margin: 0 0 22px; color: var(--muted); }
+    .customer-group { padding: 18px 0; border-top: 1px solid var(--line); }
+    .customer-group:first-of-type { border-top: 0; }
+    .customer-group strong { display: block; margin-bottom: 10px; font-size: 13px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { padding: 7px 10px; border-radius: 8px; background: #f0f4f8; color: #4b5969; font-size: 12px; }
+    .chip.verified { background: #e8f7f1; color: #117a5c; }
+    .chip.target { background: #edf4ff; color: #2267b5; }
+    .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 20px; color: var(--muted); font-size: 12px; }
+    .legend span::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 7px; border-radius: 50%; background: #a4afba; }
+    .legend .l-verified::before { background: var(--green); }
+    .legend .l-target::before { background: var(--blue); }
+
+    .substitution-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .sub-card { padding: 28px; border: 1px solid rgba(255,255,255,.14); border-radius: 18px; background: rgba(255,255,255,.04); }
+    .sub-card h3 { margin: 10px 0 14px; font-size: 21px; }
+    .sub-card p { margin: 0; color: #aeb9c6; font-size: 14px; }
+    .sub-card .signal { color: var(--cyan); font: 700 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; }
+    .market-note {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      margin-top: 22px;
+      padding: 24px 28px;
+      border-radius: 16px;
+      color: #dce5ef;
+      background: #07101b;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .market-note strong { color: #fff; }
+    .market-note a { color: var(--cyan); font-size: 12px; text-decoration: none; }
+
+    .flywheel { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+    .flywheel-copy h3 { margin: 0 0 16px; font-size: 32px; }
+    .flywheel-copy p { color: var(--muted); }
+    .flywheel-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 26px; }
+    .flywheel-step { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    .flywheel-step b { display: block; margin-bottom: 6px; }
+    .flywheel-step span { color: var(--muted); font-size: 12px; }
+    .lab-map {
+      min-height: 420px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(22,135,255,.12), transparent 60%);
+    }
+    .lab-map::before, .lab-map::after { content: ""; position: absolute; inset: 18%; border: 1px dashed #b9c6d4; border-radius: 50%; }
+    .lab-map::after { inset: 34%; }
+    .hub { position: relative; z-index: 2; width: 150px; height: 150px; display: grid; place-items: center; text-align: center; border-radius: 50%; color: #fff; background: var(--ink); box-shadow: 0 18px 40px rgba(10,34,58,.24); }
+    .hub strong { display: block; font-size: 24px; }
+    .lab { position: absolute; z-index: 3; padding: 10px 13px; border: 1px solid var(--line); border-radius: 10px; background: #fff; box-shadow: 0 10px 26px rgba(16,35,56,.12); font-size: 12px; }
+    .lab.kyoto { top: 13%; left: 8%; }
+    .lab.nagoya { top: 14%; right: 5%; }
+    .lab.suzhou { bottom: 12%; left: 10%; }
+    .lab.market { bottom: 10%; right: 5%; }
+
+    .timeline { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; }
+    .timeline::before { content: ""; position: absolute; top: 20px; left: 9%; right: 9%; height: 1px; background: #3b4857; }
+    .milestone { position: relative; padding: 58px 18px 0; }
+    .milestone::before { content: ""; position: absolute; top: 13px; left: 18px; width: 14px; height: 14px; border: 4px solid var(--ink); border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 1px #526172; }
+    .milestone time { color: var(--cyan); font: 700 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .milestone h3 { margin: 14px 0 9px; font-size: 18px; }
+    .milestone p { margin: 0; color: #9eabba; font-size: 13px; }
+
+    .finance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .use-card { padding: 34px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+    .use-card h3 { margin: 0 0 20px; font-size: 24px; }
+    .use-list { display: grid; gap: 14px; }
+    .use-item { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .use-item:first-child { border-top: 0; padding-top: 0; }
+    .use-item .n { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 8px; color: var(--blue-2); background: #eaf3ff; font: 800 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .use-item strong { display: block; }
+    .use-item span { color: var(--muted); font-size: 13px; }
+    .ask-card { padding: 34px; color: #fff; border-radius: 18px; background: var(--ink); }
+    .ask-card h3 { margin: 0 0 16px; font-size: 28px; }
+    .ask-card p { color: #aeb9c6; }
+    .ask-card blockquote { margin: 28px 0; padding: 18px 0 18px 20px; border-left: 3px solid var(--blue); color: #e6edf4; font-size: 18px; }
+    .ask-meta { display: grid; gap: 10px; margin-top: 28px; }
+    .ask-meta div { padding: 12px 14px; border: 1px solid rgba(255,255,255,.14); border-radius: 10px; color: #cbd4df; font-size: 13px; }
+
+    .diligence-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .check { padding: 22px; border: 1px solid rgba(255,255,255,.13); border-radius: 14px; background: rgba(255,255,255,.035); }
+    .check strong { display: block; margin-bottom: 7px; }
+    .check span { color: #9eabba; font-size: 13px; }
+
+    footer { padding: 62px 24px; background: #050a10; color: #84909e; }
+    .footer-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+    .footer-brand { color: #fff; font-size: 24px; font-weight: 850; }
+    .sources { display: grid; gap: 8px; font-size: 12px; }
+    .sources a, .sources span { color: #aeb9c6; text-decoration: none; }
+    .sources a:hover { color: var(--cyan); }
+    .disclaimer { max-width: var(--max); margin: 36px auto 0; padding-top: 24px; border-top: 1px solid #1c2631; font-size: 11px; }
+
+    @media (max-width: 980px) {
+      .hero-grid, .section-head, .thesis-grid, .flywheel, .finance-grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .hero-grid { padding-top: 72px; gap: 34px; }
+      .hero-panel { align-self: auto; }
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      .metric:nth-child(odd) { border-left: 1px solid var(--line); }
+      .metric:last-child { grid-column: 1/-1; }
+      .engine-layout, .powder-layout { grid-template-columns: 1fr; }
+      .engine-visual, .powder-art { position: relative; top: auto; height: 380px; }
+      .powder-art { grid-template-columns: 1fr 1fr; }
+      .powder-art figure:last-child { display: none; }
+      .value-chain { grid-template-columns: 1fr 1fr; }
+      .chain-step:nth-child(2) { border-right: 0; }
+      .chain-step:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.15); }
+      .substitution-grid { grid-template-columns: 1fr; }
+      .timeline { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .timeline::before { display: none; }
+      .milestone { padding: 0 0 0 28px; }
+      .milestone::before { top: 7px; left: 0; width: 10px; height: 10px; border-width: 2px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 680px) {
+      .nav-inner { padding: 0 16px; }
+      .nav-links { gap: 14px; }
+      .nav-links a:nth-child(n+5) { display: none; }
+      .hero-grid { padding: 58px 18px 40px; }
+      h1 { font-size: 42px; }
+      .metrics { padding: 0 16px; grid-template-columns: 1fr; }
+      .metric, .metric:first-child, .metric:nth-child(odd) { border-left: 1px solid var(--line); }
+      .metric:last-child { grid-column: auto; }
+      .section { padding: 78px 18px; }
+      .section-head { gap: 22px; }
+      .product-grid { grid-template-columns: 1fr; }
+      .ceramic-gallery { grid-template-columns: 1fr; }
+      .ceramic-gallery figure, .ceramic-gallery figure:nth-child(2) { height: 220px; margin: 0; }
+      .powder-art { grid-template-columns: 1fr; }
+      .customer-columns, .diligence-grid { grid-template-columns: 1fr; }
+      .value-chain, .timeline { grid-template-columns: 1fr; }
+      .chain-step { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.15); }
+      .chain-step:last-child { border-bottom: 0; }
+      .market-note { grid-template-columns: 1fr; }
+      .flywheel-steps { grid-template-columns: 1fr; }
+      .lab-map { min-height: 360px; border-radius: 22px; }
+      .lab { position: static; margin: 5px; }
+      .lab-map { grid-template-columns: 1fr 1fr; padding: 22px; align-content: center; }
+      .hub { grid-column: 1/-1; justify-self: center; margin-bottom: 18px; }
+      .lab-map::before, .lab-map::after { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+    @media print {
+      .nav, .progress, .filterbar { display: none !important; }
+      .hero { min-height: 760px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .section { padding: 52px 24px; break-inside: avoid; }
+      .engine-visual, .powder-art { position: relative; top: auto; }
+      .product.is-hidden { display: block; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="页面导航">
+    <div class="nav-inner">
+      <div class="brand"><span class="brand-mark"></span>Y 公司</div>
+      <div class="nav-links">
+        <a href="#thesis">投资逻辑</a>
+        <a href="#ceramics">透明陶瓷</a>
+        <a href="#powders">金属粉/浆</a>
+        <a href="#customers">客户验证</a>
+        <a href="#moat">国产替代</a>
+        <a href="#finance">融资方向</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Advanced materials · Investor brief 2026</div>
+        <h1>用一套底层材料能力，打开两条高壁垒产业链</h1>
+        <p class="hero-lead">Y 公司聚焦微纳米金属粉体/浆料与光学级透明陶瓷：一条业务服务半导体封装、电子与新能源的导电互连；另一条业务面向激光、光通信及高端探测的磁光与功能陶瓷。</p>
+        <div class="hero-tags">
+          <span class="hero-tag">苏州产业化基地</span>
+          <span class="hero-tag">日本研发飞地</span>
+          <span class="hero-tag">粉体制备 × 透明陶瓷烧结</span>
+          <span class="hero-tag">国产替代 × 全球细分市场</span>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="双业务引擎概览">
+        <h2>双业务引擎</h2>
+        <p>同源于粒径、表面、纯度与烧结工艺控制，商业化节奏彼此错位、风险收益互补。</p>
+        <div class="engine-row">
+          <div class="engine-no">01</div>
+          <div><strong>透明陶瓷（人工晶体）</strong><span>TAG 已进入批次验证；YIG、闪烁体与荧光体构成研发储备。</span></div>
+        </div>
+        <div class="engine-row">
+          <div class="engine-no">02</div>
+          <div><strong>金属粉体与浆料</strong><span>银片粉与低温活性银粉贡献当期业务；纳米银膏、纳米铜与复合粉体打开增量。</span></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <div class="metric-wrap">
+    <div class="metrics" aria-label="核心经营与产业化指标">
+      <div class="metric"><div class="metric-value">≈<em>10</em>亿元</div><div class="metric-label">2025 年营业收入<small>银材料占比 &gt;90%</small></div></div>
+      <div class="metric"><div class="metric-value"><em>4/4</em></div><div class="metric-label">头部封装客户验厂完成<small>公司材料称已进入供应链</small></div></div>
+      <div class="metric"><div class="metric-value"><em>8</em>年+</div><div class="metric-label">从海外研发到国内放大<small>材料研发与工程化积累</small></div></div>
+      <div class="metric"><div class="metric-value"><em>20</em>万片</div><div class="metric-label">TAG 透明陶瓷年产线目标<small>当前处批次验证/爬坡阶段</small></div></div>
+      <div class="metric"><div class="metric-value">≈<em>1</em>亿元</div><div class="metric-label">固定资产投资<small>苏州约 1 万㎡、两栋厂房</small></div></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" id="thesis">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Investment thesis</div><h2 class="section-title">投资价值</h2></div>
+          <p class="section-intro">Y 公司不应被简单归类为“光伏银粉公司”，也不宜仅以透明陶瓷的远期想象估值。更准确的理解是：一家以微纳米粉体和烧结为底座、用成熟现金流承接新材料产业化的技术平台。</p>
+        </div>
+        <div class="thesis-grid">
+          <article class="thesis-card primary">
+            <div class="big-no">01</div>
+            <h3>当期收入基础与未来高毛利产品，不是同一条曲线</h3>
+            <p>银材料业务形成收入和客户基础；TAG/YIG、烧结型纳米银膏及铜基复合材料则承担产品结构升级。融资价值在于把“已有制造与客户能力”转化为“高壁垒新品放量”。</p>
+            <div class="mini-list">
+              <div>成熟产品贡献现金流与贵金属周转能力</div>
+              <div>新品通过客户认证提升单位加工价值与粘性</div>
+              <div>透明陶瓷提供小市场、高单价、全球竞争的第二增长极</div>
+            </div>
+          </article>
+          <article class="thesis-card">
+            <div class="big-no">02</div>
+            <h3>核心壁垒不是“会做样品”，而是从 0 到 100</h3>
+            <p>先进材料的真正门槛是粒径窗口、表面包覆、离子杂质、烧结窗口、批次一致性与客户可靠性数据库的组合。苏州基地承接中试放大，日本研发飞地提供机理与工艺源头。</p>
+            <div class="mini-list">
+              <div>40–500 nm 多规格粉体与表面体系</div>
+              <div>国内放大、质量管理与客户现场适配</div>
+              <div>粉体原料与透明陶瓷制程形成内部协同</div>
+            </div>
+          </article>
+          <article class="thesis-card">
+            <div class="big-no">03</div>
+            <h3>国产替代正在从“能供货”转向“可降本、可验证、可持续”</h3>
+            <p>高银价与光伏减银推动银包铜/铜基材料；SiC/GaN 功率器件推动高可靠烧结连接；光通信与高功率激光需要更稳定的磁光材料。Y 公司的机会来自材料升级，不只是进口替代标签。</p>
+            <div class="mini-list">
+              <div>粉体：替代日美高端产品的定价与交付依赖</div>
+              <div>铜基：以复合结构缓解成本和抗氧化矛盾</div>
+              <div>透明陶瓷：以多晶工艺挑战单晶尺寸、成本与供给约束</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark engine-section" id="ceramics">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Engine 01 · High-growth curve</div><h2 class="section-title">透明陶瓷：从 TAG 量产突破到多材料平台</h2></div>
+          <p class="section-intro">透明陶瓷将陶瓷可制造性与晶体级光学性能结合。投资逻辑不是“一种材料押注”，而是以 TAG 建立工艺与客户入口，再向 YIG、激光陶瓷、闪烁体与荧光体延展。</p>
+        </div>
+        <div class="engine-layout">
+          <aside class="engine-visual">
+            <img src="tag-ring.jpg" alt="Y 公司 TAG 透明陶瓷样品">
+            <div class="visual-caption"><strong>光的“单向阀”</strong><span>磁光材料在外加磁场下旋转偏振方向，帮助隔离反射光、保护激光与光通信系统。</span></div>
+          </aside>
+          <div class="products">
+            <article class="product">
+              <div class="product-top"><div><h3>TAG 磁光透明陶瓷</h3><span class="formula">Tb₃Al₅O₁₂ / YTAG</span></div><span class="stage verify">批次验证</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>高功率激光器、光隔离器、法拉第旋转器</dd></div>
+                <div><dt>客户价值</dt><dd>提升磁光性能；多晶路线具备大尺寸与规模化潜力</dd></div>
+                <div><dt>公司进展</dt><dd>2025 年底首批合格大尺寸样品；公司口径性能较传统 TGG 提升 20%+</dd></div>
+              </dl>
+            </article>
+            <article class="product">
+              <div class="product-top"><div><h3>YIG 透明陶瓷 / 法拉第旋片</h3><span class="formula">Y₃Fe₅O₁₂</span></div><span class="stage rnd">研发中</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>1310/1550 nm 光通信隔离器、环行器及集成光学器件</dd></div>
+                <div><dt>客户价值</dt><dd>服务 AI 数据中心、云计算与高速光通信的非互易光学器件</dd></div>
+                <div><dt>公司计划</dt><dd>2026 H2 推进实验室开发与样品验证，核心粉体工艺已进入工程化准备</dd></div>
+              </dl>
+            </article>
+            <article class="product">
+              <div class="product-top"><div><h3>YAG / 高功率激光透明陶瓷</h3><span class="formula">Y₃Al₅O₁₂ · doped ceramics</span></div><span class="stage verify">样品验证</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>超快激光、烧蚀激光、500 W 级高功率激光</dd></div>
+                <div><dt>客户价值</dt><dd>面向大尺寸、复杂掺杂与高功率热管理需求</dd></div>
+                <div><dt>公司进展</dt><dd>材料载明已进入国内激光器客户供应链或小批验证</dd></div>
+              </dl>
+            </article>
+            <article class="product">
+              <div class="product-top"><div><h3>闪烁体 / 荧光体透明陶瓷</h3><span class="formula">Scintillator · Phosphor ceramics</span></div><span class="stage rnd">种子研发</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>CT / X 射线探测、工业无损检测、高功率激光照明与特种显示</dd></div>
+                <div><dt>客户价值</dt><dd>通过组分、形状与尺寸设计兼顾光输出、耐热与制造良率</dd></div>
+                <div><dt>产业角色</dt><dd>复用透明陶瓷粉体与烧结平台，形成中长期产品管线</dd></div>
+              </dl>
+            </article>
+            <div class="ceramic-gallery" aria-label="透明陶瓷样品">
+              <figure><img src="tag-rods.jpg" alt="TAG 透明陶瓷棒状样品"></figure>
+              <figure><img src="tag-ring.jpg" alt="TAG 透明陶瓷环形样品"></figure>
+              <figure><img src="tag-cone.jpg" alt="TAG 透明陶瓷锥形样品"></figure>
+            </div>
+            <p class="fineprint">状态口径：除公开论文与行业资料外，产品性能、产线能力与客户进展来自公司提供材料，需在正式融资尽调中以测试报告、订单、验收与客户访谈核验。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="powders">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Engine 02 · Current base</div><h2 class="section-title">金属粉与浆：从导电填料走向连接材料平台</h2></div>
+          <p class="section-intro">产品组合覆盖亚微米银粉、纳米银膏、纳米铜、铜基微纳米复合粉体与银片粉。商业价值依次来自低温活性、印刷与分散、可靠连接、贵金属降本和客户配方适配。</p>
+        </div>
+        <div class="filterbar" aria-label="按产品阶段筛选">
+          <button class="filter active" data-filter="all" type="button">全部</button>
+          <button class="filter" data-filter="mass" type="button">量产 / 出货</button>
+          <button class="filter" data-filter="verify" type="button">客户验证</button>
+          <button class="filter" data-filter="rnd" type="button">研发储备</button>
+        </div>
+        <div class="powder-layout">
+          <div class="products" id="product-list">
+            <article class="product" data-stage="mass">
+              <div class="product-top"><div><h3>低温高活性纳米银粉</h3><span class="formula">SN300 / SN500 · D50 约 0.2–0.8 μm 可调</span></div><span class="stage mass">量产</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>HJT 低温银浆、电子导电胶、烧结促进剂、印刷电子</dd></div>
+                <div><dt>价值</dt><dd>低温颈连、高振实、窄分布与小网口印刷适配</dd></div>
+                <div><dt>替代潜力</dt><dd>对标 DOWA 等日欧美高端导电粉体供应商</dd></div>
+              </dl>
+            </article>
+            <article class="product" data-stage="verify">
+              <div class="product-top"><div><h3>导通型 / 烧结型纳米银膏</h3><span class="formula">40–80 nm + 80–120 nm 双粒径体系</span></div><span class="stage verify">验证 / 导入</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>SiC/GaN/IGBT 芯片贴装、高导热导电胶、柔性电子、固态电池 Ag-C 界面</dd></div>
+                <div><dt>价值</dt><dd>150–200°C 低温处理、高固含、低有机残留与连续导电网络</dd></div>
+                <div><dt>关键门槛</dt><dd>空洞率、剪切强度、热阻、功率循环及客户设备工艺窗口</dd></div>
+              </dl>
+            </article>
+            <article class="product" data-stage="verify">
+              <div class="product-top"><div><h3>低温烧结纳米铜粉</h3><span class="formula">150–500 nm</span></div><span class="stage verify">工程验证</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>柔性电子、MLCC / EMI、电力电子互连及潜在功率封装</dd></div>
+                <div><dt>价值</dt><dd>以铜替银降本，同时维持低电阻与后续 Ni/Ag 包覆能力</dd></div>
+                <div><dt>关键门槛</dt><dd>抗氧化、还原烧结气氛、储存稳定性及湿热可靠性</dd></div>
+              </dl>
+            </article>
+            <article class="product" data-stage="verify">
+              <div class="product-top"><div><h3>铜基微纳米复合粉体</h3><span class="formula">Ag@Ni@Cu</span></div><span class="stage verify">工程验证</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>银包铜浆料、导电胶、EMI 屏蔽、光伏减银与电子连接</dd></div>
+                <div><dt>价值</dt><dd>铜芯降本、镍层阻挡迁移/扩散、银层兼容现有配方</dd></div>
+                <div><dt>公司数据</dt><dd>材料载明体电阻率约 22 μΩ·cm、约 500°C 出现明显铜氧化</dd></div>
+              </dl>
+            </article>
+            <article class="product" data-stage="mass">
+              <div class="product-top"><div><h3>银片粉系列</h3><span class="formula">YJF-9xx / 7xx · D50 约 1.3–5.1 μm</span></div><span class="stage mass">批量出货</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>半导体封装导电胶、电子浆料、导电填料与屏蔽材料</dd></div>
+                <div><dt>价值</dt><dd>片状搭接形成导电骨架，粒径/比表面积/振实可按配方组合</dd></div>
+                <div><dt>客户进展</dt><dd>公司材料载明 2026 Q1 高端封装金属粉体批量化出货</dd></div>
+              </dl>
+            </article>
+            <article class="product" data-stage="rnd">
+              <div class="product-top"><div><h3>固态电池界面银碳浆</h3><span class="formula">Ag ≈ 60 nm · Ag-C interface</span></div><span class="stage rnd">送样</span></div>
+              <dl class="product-grid">
+                <div><dt>应用</dt><dd>固态电池负极界面导电与接触改善</dd></div>
+                <div><dt>价值</dt><dd>在界面构建稳定导电网络，降低局部接触阻抗</dd></div>
+                <div><dt>商业化重点</dt><dd>需要结合电芯体系验证循环寿命、安全性与单位成本</dd></div>
+              </dl>
+            </article>
+          </div>
+          <aside class="powder-art" aria-label="粉体微观形貌">
+            <figure><img src="nano-silver-sem.jpg" alt="纳米银粉扫描电镜图"><figcaption>纳米银粉：粒径与团聚形态决定分散、振实及低温烧结窗口。</figcaption></figure>
+            <figure><img src="composite-map.jpg" alt="银镍铜复合粉体元素分布图"><figcaption>Ag@Ni@Cu：复合壳层的连续性决定抗氧化与长期可靠性。</figcaption></figure>
+            <figure><img src="silver-flake-sem.jpg" alt="银片粉扫描电镜图"><figcaption>银片粉：片径、厚度和表面处理共同影响导电骨架与浆料流变。</figcaption></figure>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section deep" id="value">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Where value is created</div><h2 class="section-title">Y 公司不只“卖粉”，价值沿产业链逐级放大</h2></div>
+          <p class="section-intro">粉体业务的天花板由加工费决定；当公司进一步提供浆料配方、客户工艺窗口与可靠性数据，产品从原料变为解决方案，客户切换成本和盈利质量随之提升。</p>
+        </div>
+        <div class="value-chain">
+          <article class="chain-step"><div class="num">01 · POWDER</div><h3>粉体制备</h3><p>粒径、形貌、纯度、残碳、离子杂质、表面包覆与批次一致性。</p></article>
+          <article class="chain-step"><div class="num">02 · FORMULATION</div><h3>浆料 / 湿态交付</h3><p>高固含、低粘度、触变、印刷/点胶、储存稳定和排胶体系。</p></article>
+          <article class="chain-step"><div class="num">03 · PROCESS</div><h3>客户工艺窗口</h3><p>温度、压力、气氛、基材金属化与设备节拍的联合适配。</p></article>
+          <article class="chain-step"><div class="num">04 · RELIABILITY</div><h3>可靠性数据库</h3><p>剪切、热循环、功率循环、HAST、空洞率、热阻与失效分析。</p></article>
+        </div>
+        <div class="chain-note"><strong>融资后的关键动作：</strong>同步建设应用实验室与可靠性验证能力，让研发评价指标从“粉体参数达标”升级为“在客户器件上可稳定量产”。</div>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Customer validation</div><h2 class="section-title">客户版图</h2></div>
+          <p class="section-intro">融资材料应把“已导入/已出货”与“目标客户/潜在客户”分开。以下名称均来自公司材料；正式对外前应由管理层逐一确认可披露范围、产品线、订单状态和收入贡献。</p>
+        </div>
+        <div class="customer-columns">
+          <article class="customer-card">
+            <h3>金属粉体与浆料</h3>
+            <p>从高端封装导电材料切入，再向铜替代与电池界面材料扩展。</p>
+            <div class="customer-group"><strong>公司材料载明：已导入 / 批量化出货</strong><div class="chips"><span class="chip verified">汉高 Henkel</span><span class="chip verified">力森诺科 Resonac</span><span class="chip verified">住友体系</span><span class="chip verified">比亚迪</span><span class="chip verified">长春永固</span></div></div>
+            <div class="customer-group"><strong>送样 / 目标应用</strong><div class="chips"><span class="chip target">通威</span><span class="chip target">固态电池客户</span><span class="chip target">HJT 银浆厂</span><span class="chip target">功率半导体封装厂</span><span class="chip target">MLCC / EMI 材料商</span></div></div>
+          </article>
+          <article class="customer-card">
+            <h3>透明陶瓷</h3>
+            <p>先进入激光器与光隔离器验证，再拓展光通信、医疗成像与工业探测。</p>
+            <div class="customer-group"><strong>公司材料载明：供货或验证中</strong><div class="chips"><span class="chip verified">国内激光器头部客户</span><span class="chip verified">透明陶瓷小批验证客户</span></div></div>
+            <div class="customer-group"><strong>目标 / 潜在客户池</strong><div class="chips"><span class="chip target">锐科激光</span><span class="chip target">创鑫激光</span><span class="chip target">Coherent</span><span class="chip target">中际旭创</span><span class="chip target">新易盛</span><span class="chip target">光迅科技</span><span class="chip target">华为</span><span class="chip target">住友电工</span></div></div>
+          </article>
+        </div>
+        <div class="legend"><span class="l-verified">公司材料称已导入、出货或验证</span><span class="l-target">目标/潜在客户，不代表商业关系</span></div>
+      </div>
+    </section>
+
+    <section class="section dark" id="moat">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Localization opportunity</div><h2 class="section-title">国产替代，不是一个口号，而是三种不同的替代逻辑</h2></div>
+          <p class="section-intro">不同产品的替代门槛、客户验证周期和商业化速度差异巨大。投资决策应按各自证据链评估，而不是用一个“国产化率”概括全部业务。</p>
+        </div>
+        <div class="substitution-grid">
+          <article class="sub-card"><div class="signal">SUPPLY SECURITY</div><h3>高端银粉 / 银片：供给与定价替代</h3><p>目标是达到日欧美粉体供应商的粒径控制、离子杂质、表面体系与吨级一致性。客户一旦完成认证，切换频率通常较低，但必须持续证明批次稳定。</p></article>
+          <article class="sub-card"><div class="signal">COST DOWN</div><h3>纳米铜 / Ag@Ni@Cu：贵金属降本替代</h3><p>高银价与 PV 减银趋势推动铜替代；真正壁垒在抗氧化、迁移、湿热与客户现有配方兼容，而不是单纯“铜更便宜”。</p></article>
+          <article class="sub-card"><div class="signal">TECHNOLOGY ROUTE</div><h3>TAG / YIG：材料路线替代</h3><p>多晶透明陶瓷尝试用更灵活的尺寸、成分与规模制造能力，挑战传统单晶路线和海外磁光材料供给。验证重点是透过率、吸收、Verdet 常数、损伤阈值与良率。</p></article>
+        </div>
+        <div class="market-note">
+          <div><strong>2026 年行业信号：</strong>全球工业银需求预计承压，主要受光伏持续减银与替代影响；AI 基础设施、汽车和电网相关用银仍具结构性支撑。这意味着 Y 公司的银粉业务要靠性能与应用升级，铜基复合材料则直接受益于“降银耗”方向。</div>
+          <a href="https://silverinstitute.org/wp-content/uploads/2026/04/World-Silver-Survey-2026.pdf" target="_blank" rel="noreferrer">World Silver Survey 2026 ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rd">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">R&amp;D to scale-up</div><h2 class="section-title">“海外 0→1 + 国内 1→100”的研发产业化闭环</h2></div>
+          <p class="section-intro">京都 New-Tech 聚焦纳米金属粉体复合材料；名古屋 WorldLab 聚焦磁光透明陶瓷；苏州基地负责中试、量产、质量管理与客户共创。核心价值是把隐性工艺知识沉淀为可复制的生产参数。</p>
+        </div>
+        <div class="flywheel">
+          <div class="flywheel-copy">
+            <h3>两条产品线，复用一套能力栈</h3>
+            <p>金属粉体和透明陶瓷看似跨界，底层都依赖高纯粉体、粒径分布、表面状态、烧结动力学与设备工程化。前者提供规模制造与客户现金流，后者将能力延伸到高价值光学材料。</p>
+            <div class="flywheel-steps">
+              <div class="flywheel-step"><b>机理研究</b><span>成核、长大、掺杂、界面与烧结机制</span></div>
+              <div class="flywheel-step"><b>配方与工艺</b><span>表面包覆、流变、气氛、温压窗口</span></div>
+              <div class="flywheel-step"><b>工程放大</b><span>设备、良率、稳定性、安全环保与质量体系</span></div>
+              <div class="flywheel-step"><b>客户共创</b><span>样品—验证—小批—定点—量产的闭环</span></div>
+            </div>
+          </div>
+          <div class="lab-map" aria-label="全球研发与产业化协同示意图">
+            <div class="hub"><div><strong>Y 公司</strong>材料平台</div></div>
+            <div class="lab kyoto">京都 · 粉体机理<br>New-Tech（控股）</div>
+            <div class="lab nagoya">名古屋 · 透明陶瓷<br>WorldLab（参股）</div>
+            <div class="lab suzhou">苏州 · 中试量产<br>工程化与质量体系</div>
+            <div class="lab market">全球客户 · 验证<br>应用适配与产业反馈</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark compact" id="milestones">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">18–24 month milestones</div><h2 class="section-title">下一阶段里程碑</h2></div>
+          <p class="section-intro">融资效果应以可核验的客户、良率、可靠性与收入结构里程碑衡量。</p>
+        </div>
+        <div class="timeline">
+          <article class="milestone"><time>NOW</time><h3>数据与口径治理</h3><p>统一粉体产能、产销、毛利、客户阶段、TAG 产线和测试参数口径。</p></article>
+          <article class="milestone"><time>0–6M</time><h3>TAG 批次稳定</h3><p>完成量产良率、光学参数和首批客户样机验证闭环。</p></article>
+          <article class="milestone"><time>6–12M</time><h3>封装材料升级</h3><p>纳米银膏形成完整工艺窗口与可靠性包，进入客户小批量。</p></article>
+          <article class="milestone"><time>9–18M</time><h3>铜基材料定点</h3><p>在 EMI、导电胶、光伏或电子连接场景取得至少一个标杆应用。</p></article>
+          <article class="milestone"><time>12–24M</time><h3>YIG 样品到客户</h3><p>完成可披露的光学指标、旋片样品与光通信客户联合验证。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="finance">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Financing priorities</div><h2 class="section-title">本轮融资：把技术资产转换为可验证的商业资产</h2></div>
+          <p class="section-intro">建议融资叙事围绕“新品放量与客户认证”组织，而不是单纯扩产。资金用途应与 18–24 个月可量化里程碑逐项对应。</p>
+        </div>
+        <div class="finance-grid">
+          <article class="use-card">
+            <h3>建议资金用途</h3>
+            <div class="use-list">
+              <div class="use-item"><div class="n">01</div><div><strong>透明陶瓷良率与产线爬坡</strong><span>TAG 工艺固化、关键设备、检测能力与客户小批供货。</span></div></div>
+              <div class="use-item"><div class="n">02</div><div><strong>纳米银/铜应用实验室</strong><span>烧结、热阻、剪切、空洞与可靠性测试，缩短客户验证周期。</span></div></div>
+              <div class="use-item"><div class="n">03</div><div><strong>新品中试与质量体系</strong><span>YIG、闪烁体/荧光体种子线及粉体批次一致性控制。</span></div></div>
+              <div class="use-item"><div class="n">04</div><div><strong>贵金属周转与供应链</strong><span>支持银材料业务增长、回收体系与交付韧性。</span></div></div>
+              <div class="use-item"><div class="n">05</div><div><strong>客户联合开发与知识产权</strong><span>重点客户定点、海外渠道、专利/FTO 与关键人才激励。</span></div></div>
+            </div>
+          </article>
+          <aside class="ask-card">
+            <h3>寻找能加速产业化的资本</h3>
+            <p>除财务支持外，优先引入拥有半导体封装、激光/光通信、电子材料或新能源客户资源的产业投资者与长期资本。</p>
+            <blockquote>资金的目标，是把“性能领先的样品”变成“可持续交付的产品”，把“潜在客户名单”变成“可复购的收入”。</blockquote>
+            <div class="ask-meta">
+              <div>产业协同：客户认证、应用联合开发、渠道导入</div>
+              <div>资本属性：耐心资本、先进材料产业经验</div>
+              <div>治理重点：经营数据、研发里程碑、客户阶段透明化</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section deep" id="diligence">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="kicker">Investor diligence</div><h2 class="section-title">下一轮投资人最可能追问的八项证据</h2></div>
+          <p class="section-intro">提前备齐证据，比继续增加宣传页更能提升融资效率与可信度。</p>
+        </div>
+        <div class="diligence-grid">
+          <div class="check"><strong>01 · 收入与毛利拆分</strong><span>按银片粉、银粉、浆料、铜基材料、透明陶瓷拆分收入、毛利、加工费与银价影响。</span></div>
+          <div class="check"><strong>02 · 产能与良率口径</strong><span>统一 300/600 吨等材料中的不同产能口径，说明名义、有效、当前与规划产能。</span></div>
+          <div class="check"><strong>03 · 客户认证证据</strong><span>逐客户列明 NDA、送样、验厂、小批、定点、订单、回款和复购状态。</span></div>
+          <div class="check"><strong>04 · TAG 光学参数</strong><span>透过率、吸收、Verdet 常数、消光比、损伤阈值、尺寸、批次波动与良率。</span></div>
+          <div class="check"><strong>05 · 银膏可靠性包</strong><span>烧结窗口、金属化层、空洞率、剪切、热阻、热循环、功率循环与失效分析。</span></div>
+          <div class="check"><strong>06 · 铜基复合可靠性</strong><span>包覆连续性、氧含量、储存寿命、湿热、电迁移、客户配方兼容与成本曲线。</span></div>
+          <div class="check"><strong>07 · 知识产权与 FTO</strong><span>海外技术引进、股权/许可、核心专利归属、地域权利、商业秘密与自由实施分析。</span></div>
+          <div class="check"><strong>08 · 现金流与贵金属敞口</strong><span>银采购、库存、套保、回收、账期、客户信用及价格波动传导机制。</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div><div class="footer-brand">Y 公司</div><p>贵金属粉体 · 透明陶瓷（人工晶体）<br>先进材料科技企业</p></div>
+      <div class="sources">
+        <strong style="color:#fff">资料与行业参照</strong>
+        <a href="https://www.dowa-electronics.co.jp/en/electron/ag-nano-powder.html" target="_blank" rel="noreferrer">DOWA｜Silver Nano Powder</a>
+        <a href="https://www.heraeus-electronics.com/en/products-and-solutions/sinter-materials/" target="_blank" rel="noreferrer">Heraeus｜Sinter Materials for Power Electronics</a>
+        <a href="https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.15772" target="_blank" rel="noreferrer">J. Am. Ceramic Society｜Optical-grade polycrystalline YIG for Faraday rotators</a>
+        <a href="https://www.jstage.jst.go.jp/article/lsj/47/8/47_438/_article/-char/en" target="_blank" rel="noreferrer">The Laser Society of Japan｜Ceramic magneto-optical materials: TGG and TAG</a>
+        <a href="https://silverinstitute.org/wp-content/uploads/2026/04/World-Silver-Survey-2026.pdf" target="_blank" rel="noreferrer">The Silver Institute｜World Silver Survey 2026</a>
+      </div>
+    </div>
+    <div class="disclaimer">机密 · 仅供融资沟通。本文不构成投资建议或证券发行文件。经营、客户、性能、产能、毛利及规划数据主要依据公司提供材料整理，未经审计或独立核验；目标客户名称不代表已存在商业关系。正式对外发送前，应由公司管理层、财务顾问与法律顾问完成口径确认、授权与风险审阅。</div>
+  </footer>
+
+  <script>
+    const progress = document.getElementById('progress');
+    const links = [...document.querySelectorAll('.nav-links a')];
+    const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+    function updateProgress() {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      progress.style.width = `${max > 0 ? (scrollY / max) * 100 : 0}%`;
+    }
+    addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${entry.target.id}`));
+      });
+    }, { rootMargin: '-30% 0px -62% 0px' });
+    sections.forEach(section => observer.observe(section));
+
+    const filters = [...document.querySelectorAll('.filter')];
+    const products = [...document.querySelectorAll('#product-list .product')];
+    filters.forEach(button => button.addEventListener('click', () => {
+      filters.forEach(item => item.classList.remove('active'));
+      button.classList.add('active');
+      const value = button.dataset.filter;
+      products.forEach(product => product.classList.toggle('is-hidden', value !== 'all' && product.dataset.stage !== value));
+    }));
+  </script>
+</body>
+</html>
